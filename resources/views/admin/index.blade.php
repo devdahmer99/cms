@@ -1,6 +1,7 @@
-<html>
+@extends('adminlte::page')
 
-<body>
-    <h1>Bem vindo a home da sua Dashboard</h1>
-</body>
-</html>
+@section('title', 'Home')
+
+@section('content_header')
+   <h1>Painel de Controle</h1>
+@endsection
