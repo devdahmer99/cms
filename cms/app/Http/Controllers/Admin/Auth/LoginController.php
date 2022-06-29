@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Admin\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
@@ -26,7 +29,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/painel';
+    protected string $redirectTo = '/painel';
 
     /**
      * Create a new controller instance.
@@ -38,8 +41,13 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function index()
+    public function index(): Factory|View|Application
     {
        return view('admin.login');
+    }
+
+    public function authenticate()
+    {
+
     }
 }

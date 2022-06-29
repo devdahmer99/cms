@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>CMS</b>Laravel',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -190,8 +190,8 @@ return [
     'use_route_url' => false,
     'dashboard_url' => 'home',
     'logout_url' => 'logout',
-    'login_url' => 'login',
-    'register_url' => 'register',
+    'login_url' => 'painel/login',
+    'register_url' => 'painel/register',
     'password_reset_url' => 'password/reset',
     'password_email_url' => 'password/email',
     'profile_url' => false,
